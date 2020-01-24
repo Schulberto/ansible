@@ -1,0 +1,6 @@
+---
+#Google Compute Engine required authentication global variables
+# (Replace 'YOUR_PROJECT_ID' with the Project ID used in creating your GCP project.)
+project: automated-262810
+credentials_file: ~/.ssh/automated.json
+auth_kind: serviceaccount

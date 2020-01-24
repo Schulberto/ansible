@@ -1,0 +1,7 @@
+---
+# Variables defined for us-central1-a
+name_zonea: ansibleauto
+#name_zoneb: myinstance2 
+#zone: us-central1-a
+zone: us-central1-a
+region: us-central1
