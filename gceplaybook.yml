@@ -25,6 +25,7 @@
             boot: true
             initialize_params:
               source_image: "{{ image }}"
+        metadata: '{ "startup-script" : "git clone https://github.com/Schulberto/Test.git; sudo sh /Test/install.sh" }'      
         network_interfaces:
           - access_configs:
               - name: External NAT
