@@ -3,14 +3,14 @@ properties([disableConcurrentBuilds()])
 pipeline {
         agent any
         stages {
-            stage('GIT CLONING…') {
+            stage('BASH Script Syntax Check…') {
                 steps {
-                     echo '----> Git clon'
-                     git 'https://github.com/Schulberto/ansible.git'
+                     echo '----> SH check'                    
+                     sh 'bash -n install.sh'
                      sh 'pwd'
                 }
                 }
-                stage('YAML SYNTAX TESTING…') {
+                stage('YAML Syntax Check…') {
                 steps {
                      echo '----> Test YML file'
                      sh 'ansible-playbook --syntax-check ${WORKSPACE}/gceplaybook.yml'
