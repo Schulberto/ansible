@@ -20,7 +20,7 @@ pipeline {
                 stage('GCI Deploy...') {
                 steps {
                      echo '----> Deploy new VM via Ansible'
-                     sh 'ansible-playbook -i ansible_hosts gceplaybook.yml -vvv '
+                     sh 'sudo ansible-playbook -i ansible_hosts gceplaybook.yml -vvv '
                 }
                 }
 }
